@@ -50,6 +50,7 @@ export default createGlobalStyle`
   .sectionHeader {
     width: fit-content;
     padding: 16px 100px;
+    margin: 0 auto 6rem auto;
     color: var(--white);
     font-size: 36px;
     text-transform: uppercase;
