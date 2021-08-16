@@ -29,77 +29,6 @@ export const FrontSection = styled.section`
   z-index: 100;
 `;
 
-export const Header = styled.header`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 32px;
-  width: 100%;
-
-  div {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .header--logo {
-    border: none;
-    font-family: "Zen Tokyo Zoo", cursive;
-    color: #fff;
-    display: flex;
-    font-size: 25px;
-
-    animation: flicker 3s infinite alternate;
-  }
-
-  .header--logo-outter {
-    font-size: 60px;
-    margin: auto 0;
-  }
-
-  nav {
-    width: auto;
-
-    ul {
-      width: auto;
-      list-style: none;
-      display: flex;
-    }
-
-    li {
-      position: relative;
-      padding: 3px 16px;
-      transition: all 0.4s;
-      padding-bottom: 16px;
-
-      &:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 2px -2px #fff, 0 4px 2px -2px #1282a2;
-      }
-
-      a {
-        font-size: 22px;
-        color: #fff;
-        letter-spacing: 2.5px;
-
-        text-shadow: 0 0 7px #1282a2, 0 0 10px #1282a2, 0 0 21px #1282a2,
-          0 0 42px #1282a2, 0 0 82px #1282a2, 0 0 92px #1282a2,
-          0 0 102px #1282a2, 0 0 151px #1282a2;
-      }
-
-      &:not(:last-of-type) {
-        margin-right: 24px;
-      }
-    }
-  }
-`;
-
 export const IntroductionSection = styled.div`
   color: var(--white);
   width: 80%;
@@ -255,6 +184,7 @@ export const SkillsSection = styled.section`
   }
 
   .skill--card {
+    height: 424px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -297,11 +227,17 @@ export const SkillsSection = styled.section`
   }
 `;
 
-export const Project = styled.section`
+export const ProjectSection = styled.section`
   width: 98.9vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
-  box-shadow: 0 -2px 0px 0px #fff, 0 -4px 0px 0px #1282a2;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  box-shadow: 0 -2px 0px 0px #fff, 0 -4px 0px 0px #1282a2, 0 2px 0px 0px #fff,
+    0 4px 0px 0px #1282a2;
   min-height: 100vh;
 
   margin-top: 12rem;
@@ -312,4 +248,103 @@ export const Project = styled.section`
   background-size: cover;
 
   padding: 64px 0;
+
+  .inverted {
+    flex-direction: row-reverse;
+  }
+
+  .center {
+    width: 40%;
+    margin-top: 120px !important;
+  }
+`;
+
+export const Project = styled.div`
+  width: 80vw;
+  display: flex;
+
+  &:not(:first-of-type) {
+    margin-top: 250px;
+  }
+
+  .carousel--box {
+    overflow: visible !important;
+    width: fit-content;
+  }
+
+  .carousel--div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    width: 700px;
+    min-height: 397.33px;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
+      0 0 5px #1282a2, 0 0 6px #1282a2, 0 0 7px #1282a2, 0 0 8px #1282a2;
+  }
+
+  .carousel--div-full {
+    width: 700px;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
+      0 0 5px #1282a2, 0 0 6px #1282a2, 0 0 7px #1282a2, 0 0 8px #1282a2;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project--text {
+    margin-left: 64px;
+
+    h3 {
+      color: #fff;
+      margin: 0 auto;
+      text-shadow: 0 0 7px #1282a2, 0 0 10px #1282a2, 0 0 21px #1282a2,
+        0 0 42px #1282a2, 0 0 82px #1282a2, 0 0 92px #1282a2, 0 0 102px #1282a2,
+        0 0 151px #1282a2;
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 24px;
+
+      &::after {
+        content: "";
+        position: relative;
+        display: block;
+        height: 8px;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 4px 2px -2px #fff, 0 6px 2px -2px #1282a2;
+        z-index: 20;
+      }
+    }
+
+    p {
+      color: #fff;
+      line-height: 32px;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .inverted {
+    margin-left: 0;
+    margin-right: 64px;
+  }
+
+  .center-text {
+    margin-left: 0;
+    h3::after {
+      width: 80%;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  padding: 64px 32px;
 `;

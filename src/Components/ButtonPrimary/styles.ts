@@ -14,6 +14,7 @@ export const Container = styled.a`
   overflow: hidden;
   transition: 0.2s;
   text-decoration: none;
+  cursor: pointer;
 
   &:not(:first-of-type) {
     margin-left: 32px;

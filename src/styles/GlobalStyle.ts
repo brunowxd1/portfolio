@@ -15,8 +15,6 @@ export default createGlobalStyle`
   }
 
   body {
-    background: var(--ganesa-white);
-    color: var(--ganesa-black);
     -webkit-font-smoothing: antialiased;
   }
 
@@ -25,6 +23,19 @@ export default createGlobalStyle`
       overflow-x: hidden;
     }
   }
+
+  @media(max-width: 1800px) {
+    html {
+        font-size: 93.75%;
+    }
+  }
+
+  @media(max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+  }
+
 
   body, input, button {
     font-family: 'Roboto', sans-serif;
@@ -45,6 +56,23 @@ export default createGlobalStyle`
     --tertiary: #034078;
     --quaternary: #1282A2;
     --white:#FEFCFB;
+  }
+
+  .header--logo {
+    border: none;
+    font-family: "Zen Tokyo Zoo", cursive;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+
+    animation: flicker 3s infinite alternate;
+  }
+
+  .header--logo-outter {
+    font-size: 60px;
+    margin: auto 0;
   }
 
   .sectionHeader {
@@ -68,6 +96,20 @@ export default createGlobalStyle`
       z-index: 20;
     }
   }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--quaternary);
+    border-radius: 12px;
+  }
+
 
     @keyframes flicker {
     0%,
@@ -105,4 +147,6 @@ export default createGlobalStyle`
       box-shadow: none;
     }
   }
+
+  
 `;
