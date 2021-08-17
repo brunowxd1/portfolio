@@ -4,7 +4,7 @@ export const Header = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   width: 100%;
 
   div {
@@ -12,7 +12,7 @@ export const Header = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 32px;
+    padding: 1rem 2rem;
   }
 
   a {
@@ -30,12 +30,12 @@ export const Header = styled.header`
 
     li {
       position: relative;
-      padding: 3px 16px;
+      padding: 0.18rem 1rem;
       transition: all 0.4s;
-      padding-bottom: 16px;
+      padding-bottom: 1rem;
 
       a {
-        font-size: 22px;
+        font-size: 1.37rem;
         color: #fff;
         letter-spacing: 2.5px;
         position: relative;
@@ -66,7 +66,7 @@ export const Header = styled.header`
         }
 
         &:not(:last-of-type) {
-          margin-right: 24px;
+          margin-right: 1.5rem;
         }
       }
     }

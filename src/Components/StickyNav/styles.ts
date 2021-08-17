@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.nav`
   position: fixed;
   top: 50%;
-  padding: 0 8px;
+  padding: 0 0.5rem;
   z-index: 99999;
 
   box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
@@ -25,6 +25,6 @@ export const Container = styled.nav`
   }
 
   li {
-    padding: 8px 0;
+    padding: 0.5rem 0;
   }
 `;

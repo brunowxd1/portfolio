@@ -3,21 +3,21 @@ import styled from "styled-components";
 export const Container = styled.a`
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   color: var(--white);
   box-shadow: 0 0px 0px 1px #1282a2, 0 0px 0px 1px #1282a2;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.25rem;
   overflow: hidden;
   transition: 0.2s;
   text-decoration: none;
   cursor: pointer;
 
   &:not(:first-of-type) {
-    margin-left: 32px;
+    margin-left: 2rem;
   }
 
   &:hover {
