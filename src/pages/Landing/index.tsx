@@ -3,22 +3,21 @@ import Carousel from "react-material-ui-carousel";
 import { Zoom, Fade } from "react-awesome-reveal";
 import { FiLayout, FiSettings, FiDatabase } from "react-icons/fi";
 
-import ButtonPrimary from "../../Components/ButtonPrimary";
 import StickyNav from "../../Components/StickyNav";
+import HeaderComponent from "../../Components/Header";
+import Footer from "../../Components/Footer";
+import Hero from "../../Components/Hero";
 
 import {
   AboutMe,
   Container,
   FrontSection,
-  IntroductionSection,
   Main,
   ProjectSection,
   SkillsSection,
   Project,
-  Footer,
 } from "./styles";
 
-import illustration from "../../assets/illustration1.svg";
 import me from "../../assets/me.jpeg";
 import utilitariosResulthMock from "../../assets/projects/utilitarios-resulth-mock.png";
 import utilitariosResulthLogin from "../../assets/projects/utilitarios-resulth-login.png";
@@ -27,7 +26,6 @@ import utilitariosResulthReceber from "../../assets/projects/utilitarios-resulth
 import painelEntregas from "../../assets/projects/painel-entregas.png";
 import painelEntregasOrder from "../../assets/projects/painel-entregas-order.png";
 import painelEntregasMessages from "../../assets/projects/painel-entregas-message.png";
-import HeaderComponent from "../../Components/Header";
 
 const Landing = () => {
   const [isHoveringAboutMeImage, setIsHoveringAboutMeImage] = useState(false);
@@ -35,31 +33,9 @@ const Landing = () => {
   return (
     <Container>
       <StickyNav />
-      <FrontSection id="top">
+      <FrontSection id="home">
         <HeaderComponent />
-        <IntroductionSection>
-          <div className="introduction--box">
-            <div className="introduction--title">
-              <span>Hey there! 👋</span>
-              <h1>
-                I'm,&nbsp;<strong>Bruno</strong> <span>;&#41;</span>
-              </h1>
-              <p>
-                I'm really glad that you're here! So... I am a FullStack
-                Developer and passionte for every kind of tech. Please, take
-                your time to check on my projects. Oh, and also feel free to
-                contact me. See you soon!
-              </p>
-            </div>
-            <div className="introduction--buttons">
-              <ButtonPrimary text="Contact Me!" />
-              <ButtonPrimary text="See my Projects" />
-            </div>
-          </div>
-          <object type="image/svg+xml" data={illustration}>
-            Logo
-          </object>
-        </IntroductionSection>
+        <Hero />
       </FrontSection>
       <Main>
         <AboutMe id="about-me">
@@ -112,9 +88,9 @@ const Landing = () => {
                   <span> enthusiastic</span> about <span> tech</span>, I've been
                   learning both <span> frontend</span> and <span> backend</span>{" "}
                   software development, and I could't be <span> happier</span>{" "}
-                  knowing that each and every day I'm <span> learning</span>{" "}
-                  new, awesome <span> technologies</span> and also becoming
-                  closer to achieve my goal: become{" "}
+                  knowing that each and every day I'm <span> learning</span> new
+                  awesome <span> technologies</span> and also becoming closer to
+                  achieve my goal: become{" "}
                   <span> a great Software Engineer</span>!
                 </p>
               </div>
@@ -295,15 +271,7 @@ const Landing = () => {
             </Fade>
           </Project>
         </ProjectSection>
-        <Footer>
-          <a className="header--logo" href="#top">
-            <h1>
-              <span className="header--logo-outter">&lt; </span>
-              <span>BJF</span>
-              <span className="header--logo-outter">/ &gt;</span>
-            </h1>
-          </a>
-        </Footer>
+        <Footer />
       </Main>
     </Container>
   );
