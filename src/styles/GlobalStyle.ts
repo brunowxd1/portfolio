@@ -110,13 +110,6 @@ export default createGlobalStyle`
     border-radius: 12px;
   }
 
-  @media(max-width: 600px) {
-    &::-webkit-scrollbar {
-      width: 2px;
-    }
-  }
-
-
     @keyframes flicker {
     0%,
     18%,
@@ -154,5 +147,21 @@ export default createGlobalStyle`
     }
   }
 
-  
+  @media(max-width: 768px) {
+    .header--logo {
+      font-size: 2.5rem;
+    }
+
+    .header--logo-outter {
+      font-size: 5rem;
+    }
+  }
+
+
+  @media(max-width: 600px) {
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+  }
+
 `;

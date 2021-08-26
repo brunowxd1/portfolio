@@ -95,4 +95,8 @@ export const Container = styled.a`
       margin-top: 2rem;
     }
   }
+
+  @media (max-width: 1200px) {
+    font-size: 1rem;
+  }
 `;
