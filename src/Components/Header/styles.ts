@@ -72,6 +72,18 @@ export const Header = styled.header`
     }
   }
 
+  @media (max-width: 768px) {
+    div {
+      justify-content: center;
+    }
+
+    nav {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
   @media (max-width: 600px) {
     div {
       padding: 0;
@@ -79,12 +91,6 @@ export const Header = styled.header`
       a {
         margin: 0 auto;
       }
-    }
-
-    nav {
-      display: none;
-      visibility: hidden;
-      opacity: 0;
     }
   }
 `;

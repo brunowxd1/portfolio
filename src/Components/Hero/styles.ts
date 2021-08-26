@@ -55,11 +55,34 @@ export const Container = styled.div`
     margin-top: 2.25rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1400px) {
+    width: 90%;
+  }
+
+  @media (max-width: 1200px) {
+    .introduction--title {
+      h1 {
+        font-size: 5rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+      }
+
+      p {
+        height: auto;
+        max-width: 500px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
     text-align: center;
     width: 100%;
     padding: 0 0.75rem;
     margin-bottom: 3rem;
+    justify-content: center;
 
     object {
       display: none;
@@ -67,11 +90,10 @@ export const Container = styled.div`
 
     .introduction--title {
       span {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
       }
 
       h1 {
-        font-size: 3rem;
         justify-content: center;
         margin: 0 auto;
 
@@ -81,11 +103,12 @@ export const Container = styled.div`
       }
 
       p {
-        font-size: 1rem;
         padding: 12px;
       }
     }
+  }
 
+  @media (max-width: 600px) {
     .introduction--buttons {
       margin: 1.5rem auto;
       width: 80%;
