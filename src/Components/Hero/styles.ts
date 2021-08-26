@@ -17,13 +17,13 @@ export const Container = styled.div`
 
   .introduction--title {
     span {
-      font-size: 30px;
+      font-size: 1.9rem;
       letter-spacing: 2px;
     }
 
     h1 {
-      font-size: 100px;
-      letter-spacing: 4px;
+      font-size: 6.25rem;
+      letter-spacing: 0.25rem;
       font-weight: 300;
       padding: 1rem 0;
       display: flex;
@@ -53,5 +53,44 @@ export const Container = styled.div`
   .introduction--buttons {
     display: flex;
     margin-top: 2.25rem;
+  }
+
+  @media (max-width: 600px) {
+    text-align: center;
+    width: 100%;
+    padding: 0 0.75rem;
+    margin-bottom: 3rem;
+
+    object {
+      display: none;
+    }
+
+    .introduction--title {
+      span {
+        font-size: 1.5rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        justify-content: center;
+        margin: 0 auto;
+
+        strong {
+          margin-right: 0;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 12px;
+      }
+    }
+
+    .introduction--buttons {
+      margin: 1.5rem auto;
+      width: 80%;
+      flex-direction: column;
+      height: auto;
+    }
   }
 `;

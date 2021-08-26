@@ -27,6 +27,12 @@ export const FrontSection = styled.section`
   box-shadow: 0 4px 2px -2px #fff, 0 6px 2px -2px #1282a2;
 
   z-index: 100;
+
+  @media (max-width: 600px) {
+    min-height: fit-content;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
 `;
 
 export const Main = styled.main`

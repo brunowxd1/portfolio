@@ -27,4 +27,5 @@ export const Container = styled.nav`
   li {
     padding: 0.5rem 0;
   }
+  
 `;

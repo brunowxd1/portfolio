@@ -110,6 +110,12 @@ export default createGlobalStyle`
     border-radius: 12px;
   }
 
+  @media(max-width: 600px) {
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+  }
+
 
     @keyframes flicker {
     0%,

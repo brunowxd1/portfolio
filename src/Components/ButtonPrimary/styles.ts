@@ -87,4 +87,12 @@ export const Container = styled.a`
     transition: 1s;
     transition-delay: 0.75s;
   }
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+    &:not(:first-of-type) {
+      margin-left: 0;
+      margin-top: 2rem;
+    }
+  }
 `;
