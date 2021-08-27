@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react";
+import LoadingComponent from "./Components/LoadingComponent";
 import GlobalStyle from "./styles/GlobalStyle";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      <Suspense fallback={<div>Test</div>}>
+      <Suspense fallback={<LoadingComponent />}>
         <LandingComponent />
       </Suspense>
     </>

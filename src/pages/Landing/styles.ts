@@ -71,7 +71,7 @@ export const Main = styled.div`
   }
 
   @media (max-width: 600px) {
-    top: 65vh;
+    top: 55vh;
   }
 `;
 
