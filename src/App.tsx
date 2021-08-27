@@ -3,7 +3,7 @@ import LoadingComponent from "./Components/LoadingComponent";
 import GlobalStyle from "./styles/GlobalStyle";
 
 function App() {
-  const LandingComponent = lazy(() => import("./pages/Landing"));
+  const LandingComponent = lazy(async () => await import("./pages/Landing"));
   return (
     <>
       <GlobalStyle />

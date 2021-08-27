@@ -99,4 +99,8 @@ export const Container = styled.a`
   @media (max-width: 1200px) {
     font-size: 1rem;
   }
+
+  .accessibility {
+    visibility: hidden;
+  }
 `;

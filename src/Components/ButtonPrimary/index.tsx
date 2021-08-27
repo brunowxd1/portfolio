@@ -12,6 +12,9 @@ const ButtonPrimary = ({ text }: ButtonPrimaryProps) => {
       <span></span>
       <span></span>
       {text}
+      <span className="accessibility" aria-hidden="false">
+        {text}
+      </span>
     </Container>
   );
 };

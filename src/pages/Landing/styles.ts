@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import bg1 from "../../assets/bg1.jpg";
+import bg1 from "../../assets/bg1.webp";
 
 export const Container = styled.main`
   min-height: 100vh;

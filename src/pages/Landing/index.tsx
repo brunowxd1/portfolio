@@ -18,14 +18,14 @@ import {
   Project,
 } from "./styles";
 
-import me from "../../assets/me.jpeg";
-import utilitariosResulthMock from "../../assets/projects/utilitarios-resulth-mock.png";
-import utilitariosResulthLogin from "../../assets/projects/utilitarios-resulth-login.png";
-import utilitariosResulthProduto from "../../assets/projects/utilitarios-resulth-produto.png";
-import utilitariosResulthReceber from "../../assets/projects/utilitarios-resulth-receber.png";
-import painelEntregas from "../../assets/projects/painel-entregas.png";
-import painelEntregasOrder from "../../assets/projects/painel-entregas-order.png";
-import painelEntregasMessages from "../../assets/projects/painel-entregas-message.png";
+import me from "../../assets/me.webp";
+import utilitariosResulthMock from "../../assets/projects/utilitarios-resulth-mock.webp";
+import utilitariosResulthLogin from "../../assets/projects/utilitarios-resulth-login.webp";
+import utilitariosResulthProduto from "../../assets/projects/utilitarios-resulth-produto.webp";
+import utilitariosResulthReceber from "../../assets/projects/utilitarios-resulth-receber.webp";
+import painelEntregas from "../../assets/projects/painel-entregas.webp";
+import painelEntregasOrder from "../../assets/projects/painel-entregas-order.webp";
+import painelEntregasMessages from "../../assets/projects/painel-entregas-message.webp";
 
 const getWindowWidth = () => {
   const { innerWidth: width } = window;
@@ -296,4 +296,5 @@ const Landing = () => {
     </Container>
   );
 };
+
 export default Landing;
