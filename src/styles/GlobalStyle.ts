@@ -80,7 +80,7 @@ export default createGlobalStyle`
     padding: 16px 100px;
     margin: 0 auto 6rem auto;
     color: var(--white);
-    font-size: 36px;
+    font-size: 2.25rem;
     text-transform: uppercase;
     font-family: "Zen Tokyo Zoo", cursive;
 
@@ -159,6 +159,18 @@ export default createGlobalStyle`
 
 
   @media(max-width: 600px) {
+    .sectionHeader {
+      padding: 1rem 0;
+      margin: 0 auto 4rem auto;
+    }
+    .header--logo {
+      font-size: 2rem;
+    }
+
+    .header--logo-outter {
+      font-size: 4rem;
+    }
+
     &::-webkit-scrollbar {
       width: 2px;
     }

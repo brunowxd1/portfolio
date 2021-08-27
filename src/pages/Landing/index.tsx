@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Carousel from "react-material-ui-carousel";
 import { Zoom, Fade } from "react-awesome-reveal";
 import { FiLayout, FiSettings, FiDatabase } from "react-icons/fi";
@@ -27,8 +27,25 @@ import painelEntregas from "../../assets/projects/painel-entregas.png";
 import painelEntregasOrder from "../../assets/projects/painel-entregas-order.png";
 import painelEntregasMessages from "../../assets/projects/painel-entregas-message.png";
 
+const getWindowWidth = () => {
+  const { innerWidth: width } = window;
+
+  return width;
+};
+
 const Landing = () => {
   const [isHoveringAboutMeImage, setIsHoveringAboutMeImage] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(getWindowWidth());
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Container>
@@ -74,17 +91,18 @@ const Landing = () => {
             <Fade triggerOnce delay={500}>
               <div className="aboutme--text">
                 <p>
-                  &ensp;&ensp;&ensp;&ensp;&ensp;I am a former Law School Student
-                  who dropped out after 4 years of college to work with what
-                  I've <span> loved</span> my entire life:{" "}
-                  <span> technology</span>. As a kid, I was always curious about
-                  how things work, mostly due to my early introduction to
+                  {windowWidth > 600 && <>&ensp;&ensp;&ensp;&ensp;&ensp;</>}I am
+                  a former Law School Student who dropped out after 4 years of
+                  college to work with what I've <span> loved</span> my entire
+                  life: <span> technology</span>. As a kid, I was always curious
+                  about how things work, mostly due to my early introduction to
                   computers. And so, this curiosity and drive for{" "}
                   <span> knowledge</span> just kept growing, and keeps growing
                   still.
                   <br />
                   <br />
-                  &ensp;&ensp;&ensp;&ensp;&ensp;Furthermore, being so
+                  {windowWidth > 600 && <>&ensp;&ensp;&ensp;&ensp;&ensp;</>}
+                  Furthermore, being so
                   <span> enthusiastic</span> about <span> tech</span>, I've been
                   learning both <span> frontend</span> and <span> backend</span>{" "}
                   software development, and I could't be <span> happier</span>{" "}
@@ -187,19 +205,20 @@ const Landing = () => {
               <div className="project--text">
                 <h3>Ganesa Utilitarys</h3>
                 <p>
-                  &ensp;&ensp;&ensp;&ensp;&ensp;Local WebApp totally integrated
-                  with Resulth ERP software, which contains multiple features
-                  that extend as functionalities of the system, such as:
-                  stock-taking through bar codes, sending e-mails to clients
-                  with expired due dates, placing orders, updating product
-                  entries, selecting multiple branches, user permissions, and
-                  much more.
+                  {windowWidth > 600 && <>&ensp;&ensp;&ensp;&ensp;&ensp;</>}
+                  Local WebApp totally integrated with Resulth ERP software,
+                  which contains multiple features that extend as
+                  functionalities of the system, such as: stock-taking through
+                  bar codes, sending e-mails to clients with expired due dates,
+                  placing orders, updating product entries, selecting multiple
+                  branches, user permissions, and much more.
                   <br />
-                  <br /> &ensp;&ensp;&ensp;&ensp;&ensp; Developed with NextJS
-                  (frontend) and NodeJS with express (backend). Utilizes
-                  MongoDB, Firebird and integrates with Amazon S3 for image
-                  upload. Also uses tools like nodemailer, node-imap, handlebars
-                  and jwt..
+                  <br />{" "}
+                  {windowWidth > 600 && <>&ensp;&ensp;&ensp;&ensp;&ensp;</>}
+                  Developed with NextJS (frontend) and NodeJS with express
+                  (backend). Utilizes MongoDB, Firebird and integrates with
+                  Amazon S3 for image upload. Also uses tools like nodemailer,
+                  node-imap, handlebars and jwt..
                   <br />
                   <br />
                 </p>
@@ -241,12 +260,13 @@ const Landing = () => {
               <div className="project--text inverted">
                 <h3>Ganesa Orders Panel</h3>
                 <p>
-                  &ensp;&ensp;&ensp;&ensp;&ensp;Local WebApp integrated with
-                  Resulth ERP software, which controls every order from Resulth
-                  and possesses multiple features like: compatibility with
-                  multiple purchase orders, log generation, customizable
-                  messages for customer service, customizable order statuses,
-                  date filters, notifications for due dates on orders, and more.
+                  {windowWidth > 600 && <>&ensp;&ensp;&ensp;&ensp;&ensp;</>}
+                  Local WebApp integrated with Resulth ERP software, which
+                  controls every order from Resulth and possesses multiple
+                  features like: compatibility with multiple purchase orders,
+                  log generation, customizable messages for customer service,
+                  customizable order statuses, date filters, notifications for
+                  due dates on orders, and more.
                   <br />
                   <br />
                   Developed with ReactJS (frontend) and NodeJS with express

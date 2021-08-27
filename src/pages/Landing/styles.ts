@@ -69,6 +69,10 @@ export const Main = styled.div`
   @media (max-width: 992px) {
     top: 45vh;
   }
+
+  @media (max-width: 600px) {
+    top: 65vh;
+  }
 `;
 
 export const AboutMe = styled.section`
@@ -172,23 +176,36 @@ export const AboutMe = styled.section`
       margin-top: 5rem;
 
       img {
-        width: 150px;
+        width: 125px;
       }
+    }
+
+    .aboutme--image1 {
+      left: 30%;
     }
 
     .aboutme--image2 {
       top: 100%;
-      left: 7.81rem;
+      left: 5%;
     }
 
     .aboutme--image3 {
       top: 100%;
-      left: 15.62rem;
+      left: 55%;
+    }
+
+    .aboutme--hovering {
+      top: 100%;
+      left: 30%;
     }
 
     .aboutme--text {
       margin-left: 0;
       text-align: center;
+
+      p {
+        font-size: 1rem;
+      }
     }
   }
 `;
@@ -203,7 +220,7 @@ export const SkillsSection = styled.section`
   }
 
   .skill--card {
-    height: 424px;
+    height: 26.5rem;
     border-radius: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -228,7 +245,7 @@ export const SkillsSection = styled.section`
 
     span {
       color: white;
-      font-size: 20px;
+      font-size: 1.25rem;
       padding: 0.37rem 0;
     }
 
@@ -278,7 +295,11 @@ export const SkillsSection = styled.section`
   @media (max-width: 600px) {
     margin-top: 18rem;
     .skill--grid {
-      grid-template-columns: repeat(1, 270px);
+      grid-template-columns: repeat(1, 225px);
+
+      svg {
+        width: 50px;
+      }
     }
   }
 `;
@@ -451,6 +472,10 @@ export const Project = styled.div`
         &::after {
           width: 80%;
         }
+      }
+
+      p {
+        font-size: 1rem;
       }
     }
 

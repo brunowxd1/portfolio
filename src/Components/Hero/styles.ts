@@ -109,6 +109,24 @@ export const Container = styled.div`
   }
 
   @media (max-width: 600px) {
+    .introduction--title {
+      h1 {
+        font-size: 4rem;
+      }
+
+      span {
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin: 0 auto;
+        padding: 0;
+        height: auto;
+        max-width: 90%;
+        font-size: 1rem;
+      }
+    }
+
     .introduction--buttons {
       margin: 1.5rem auto;
       width: 80%;
