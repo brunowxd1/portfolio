@@ -40,9 +40,11 @@ const StickyNav = () => {
             <AiOutlineInstagram size={35} />
           </a>
         </li>
-        <a href="mailto:brunojagminferreira@gmail.com" aria-label="E-mail">
-          <AiOutlineMail size={35} />
-        </a>
+        <li>
+          <a href="mailto:brunojagminferreira@gmail.com" aria-label="E-mail">
+            <AiOutlineMail size={35} />
+          </a>
+        </li>
       </ul>
     </Container>
   );
