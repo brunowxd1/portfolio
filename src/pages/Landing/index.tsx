@@ -169,7 +169,7 @@ const Landing = () => {
             <Fade direction="right" triggerOnce>
               <Carousel
                 navButtonsAlwaysVisible
-                interval={5000}
+                interval={50000}
                 className="carousel--box"
               >
                 <div className="carousel--div">
@@ -177,9 +177,8 @@ const Landing = () => {
                 </div>
                 <div className="carousel--div-full">
                   <iframe
-                    height="397.33"
-                    width="700"
                     title="Utilitários Resulth"
+                    loading="lazy"
                     src="https://www.youtube.com/embed/tz08hzVbaWI"
                   />
                 </div>
@@ -203,7 +202,7 @@ const Landing = () => {
                 </div>
               </Carousel>
               <div className="project--text">
-                <h3>Ganesa Utilitarys</h3>
+                <h3>Ganesa Utilitaries</h3>
                 <p>
                   {windowWidth > 600 && <>&ensp;&ensp;&ensp;&ensp;&ensp;</>}
                   Local WebApp totally integrated with Resulth ERP software,
@@ -238,8 +237,6 @@ const Landing = () => {
                 </div>
                 <div className="carousel--div-full">
                   <iframe
-                    height="397.33"
-                    width="700"
                     title="Utilitários Resulth"
                     src="https://www.youtube.com/embed/43B1DvUMMu0"
                   />

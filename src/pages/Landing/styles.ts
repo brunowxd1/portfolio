@@ -383,9 +383,16 @@ export const Project = styled.div`
   }
 
   .carousel--div-full {
+    min-height: 397.33px;
     width: 700px;
     box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
       0 0 5px #1282a2, 0 0 6px #1282a2, 0 0 7px #1282a2, 0 0 8px #1282a2;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 397.33px;
+    }
   }
 
   img {
