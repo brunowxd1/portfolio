@@ -16,6 +16,7 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
 
   html, body {
@@ -64,20 +65,20 @@ export default createGlobalStyle`
     color: #fff;
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 1.56rem;
     text-decoration: none;
 
     animation: flicker 3s infinite alternate;
   }
 
   .header--logo-outter {
-    font-size: 60px;
+    font-size: 3.75rem;
     margin: auto 0;
   }
 
   .sectionHeader {
     width: fit-content;
-    padding: 16px 100px;
+    padding: 1rem 6.25rem;
     margin: 0 auto 6rem auto;
     color: var(--white);
     font-size: 2.25rem;
@@ -88,7 +89,7 @@ export default createGlobalStyle`
       content: "";
       position: relative;
       display: block;
-      height: 8px;
+      height: 0.5rem;
       width: 40%;
       margin: 0 auto;
       margin-top: 6px;
@@ -174,6 +175,14 @@ export default createGlobalStyle`
     &::-webkit-scrollbar {
       width: 2px;
     }
+  }
+
+  .neon-box {
+
+  }
+
+  .neon-text {
+    
   }
 
 `;

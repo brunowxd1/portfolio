@@ -8,7 +8,7 @@ export const Container = styled.a`
   box-shadow: 0 0px 0px 1px #1282a2, 0 0px 0px 1px #1282a2;
   border-radius: 0.62rem;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   text-decoration: none;
   font-size: 1.25rem;
   overflow: hidden;

@@ -37,8 +37,9 @@ export const Container = styled.nav`
     height: 2.7rem;
     top: calc(100% - 2.7rem);
     left: 25%;
+
     svg {
-      width: 25px;
+      width: 1.56rem;
     }
 
     ul {

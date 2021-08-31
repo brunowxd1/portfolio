@@ -18,7 +18,7 @@ export const Container = styled.div`
   .introduction--title {
     span {
       font-size: 1.9rem;
-      letter-spacing: 2px;
+      letter-spacing: 0.12rem;
     }
 
     h1 {
@@ -44,7 +44,7 @@ export const Container = styled.div`
     }
 
     p {
-      max-width: 650px;
+      max-width: 40.62rem;
       line-height: 2.62rem;
       font-size: 1.12rem;
     }
@@ -71,7 +71,7 @@ export const Container = styled.div`
 
       p {
         height: auto;
-        max-width: 500px;
+        max-width: 31.25rem;
         font-size: 1.1rem;
       }
     }
@@ -103,7 +103,7 @@ export const Container = styled.div`
       }
 
       p {
-        padding: 12px;
+        padding: 0.75rem;
       }
     }
   }

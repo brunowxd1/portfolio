@@ -157,7 +157,7 @@ export const AboutMe = styled.section`
     }
     .aboutme--images {
       img {
-        width: 200px;
+        width: 12.5rem;
       }
     }
 
@@ -176,7 +176,7 @@ export const AboutMe = styled.section`
       margin-top: 5rem;
 
       img {
-        width: 125px;
+        width: 7.81rem;
       }
     }
 
@@ -264,17 +264,17 @@ export const SkillsSection = styled.section`
 
   @media (max-width: 1200px) {
     .skill--grid {
-      grid-template-columns: repeat(3, 275px);
+      grid-template-columns: repeat(3, 17.18rem);
       grid-column-gap: 3rem;
     }
   }
 
   @media (max-width: 992px) {
     .skill--grid {
-      grid-template-columns: repeat(3, 240px);
+      grid-template-columns: repeat(3, 15rem);
 
       svg {
-        width: 50px;
+        width: 3.12rem;
       }
     }
   }
@@ -283,11 +283,11 @@ export const SkillsSection = styled.section`
     .skill--grid {
       display: grid;
       justify-content: center;
-      grid-template-columns: repeat(1, 350px);
+      grid-template-columns: repeat(1, 21.87rem);
       grid-row-gap: 4rem;
 
       svg {
-        width: 75px;
+        width: 4.68rem;
       }
     }
   }
@@ -295,10 +295,10 @@ export const SkillsSection = styled.section`
   @media (max-width: 600px) {
     margin-top: 18rem;
     .skill--grid {
-      grid-template-columns: repeat(1, 225px);
+      grid-template-columns: repeat(1, 14.06rem);
 
       svg {
-        width: 50px;
+        width: 3.12rem;
       }
     }
   }
@@ -375,7 +375,7 @@ export const Project = styled.div`
     justify-content: center;
     background: rgba(0, 0, 0, 0.5);
     width: 700px;
-    min-height: 397.33px;
+    height: 397.33px;
     padding: 1rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
@@ -383,7 +383,7 @@ export const Project = styled.div`
   }
 
   .carousel--div-full {
-    min-height: 397.33px;
+    height: 397.33px;
     width: 700px;
     box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,
       0 0 5px #1282a2, 0 0 6px #1282a2, 0 0 7px #1282a2, 0 0 8px #1282a2;
@@ -490,18 +490,17 @@ export const Project = styled.div`
       margin-top: 8rem;
     }
 
-    .carousel--box,
-    iframe {
+    .carousel--box {
       width: 90vw;
-      height: 207.83px;
+    }
 
-      .carousel--div {
-        min-height: 0;
-        width: 90vw;
-      }
+    .carousel--div,
+    .carousel--div-full {
+      width: 90vw;
+      height: 187.33px;
 
-      .carousel--div-full {
-        width: 90vw;
+      iframe {
+        height: 187.33px;
       }
     }
   }

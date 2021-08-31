@@ -4,7 +4,7 @@ const HeaderComponent = () => {
   return (
     <Header>
       <div>
-        <a className="header--logo" href="/">
+        <a className="header--logo neon-text" href="/">
           <h1>
             <span className="header--logo-outter">&lt; </span>
             <span>BJF</span>

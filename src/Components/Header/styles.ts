@@ -37,9 +37,9 @@ export const Header = styled.header`
       a {
         font-size: 1.37rem;
         color: #fff;
-        letter-spacing: 2.5px;
+        letter-spacing: 0.15rem;
         position: relative;
-        padding-bottom: 10px;
+        padding-bottom: 0.62rem;
         text-shadow: 0 0 7px #1282a2, 0 0 10px #1282a2, 0 0 21px #1282a2,
           0 0 42px #1282a2, 0 0 82px #1282a2, 0 0 92px #1282a2,
           0 0 102px #1282a2, 0 0 151px #1282a2;
