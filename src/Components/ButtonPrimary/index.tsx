@@ -2,11 +2,12 @@ import { Container } from "./styles";
 
 interface ButtonPrimaryProps {
   text: string;
+  href: string;
 }
 
-const ButtonPrimary = ({ text }: ButtonPrimaryProps) => {
+const ButtonPrimary = ({ text, href }: ButtonPrimaryProps) => {
   return (
-    <Container>
+    <Container href={href}>
       <span></span>
       <span></span>
       <span></span>

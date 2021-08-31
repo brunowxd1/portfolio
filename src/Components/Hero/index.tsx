@@ -21,8 +21,11 @@ const Hero = () => {
           </p>
         </div>
         <div className="introduction--buttons">
-          <ButtonPrimary text="Contact Me!" />
-          <ButtonPrimary text="See my Projects" />
+          <ButtonPrimary
+            text="Contact Me!"
+            href="mail:brunojagminferreira@gmail.com"
+          />
+          <ButtonPrimary text="See my Projects" href="#projects" />
         </div>
       </div>
       <object type="image/svg+xml" data={illustration}>
