@@ -295,7 +295,7 @@ export const SkillsSection = styled.section`
   @media (max-width: 600px) {
     margin-top: 18rem;
     .skill--grid {
-      grid-template-columns: repeat(1, 14.06rem);
+      grid-template-columns: repeat(1, 18rem);
 
       svg {
         width: 3.12rem;
