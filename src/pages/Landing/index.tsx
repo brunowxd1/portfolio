@@ -244,13 +244,13 @@ const Landing = () => {
                 <div className="carousel--div-full">
                   <img
                     src={painelEntregasOrder}
-                    alt="Utilitários Resulth - Mensagens"
+                    alt="Painel de Entregas- Order"
                   />
                 </div>
                 <div className="carousel--div-full">
                   <img
                     src={painelEntregasMessages}
-                    alt="Utilitários Resulth - Messages"
+                    alt="Painel de Entregas- Messages"
                   />
                 </div>
               </Carousel>
