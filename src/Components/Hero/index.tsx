@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="introduction--buttons">
           <ButtonPrimary
             text="Contact Me!"
-            href="mail:brunojagminferreira@gmail.com"
+            href="mailto:brunojagminferreira@gmail.com"
           />
           <ButtonPrimary text="See my Projects" href="#projects" />
         </div>
